@@ -3,6 +3,9 @@ try:
 except ImportError:
     from distutils.core import setup
 
+with open("README.md", "r", encoding="utf-8") as fh:
+    long_description = fh.read()
+
 
 setup(
     name="CoincoinMktCap",
@@ -25,7 +28,7 @@ setup(
         'Programming Language :: Python :: 3.6',
         'Topic :: Software Development :: Libraries :: Python Modules',
     ],
-    long_description=open("README.md").read(),
+    long_description=long_description,
     long_description_content_type="text/markdown",
     python_requires=">=3.6",
 )
