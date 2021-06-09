@@ -8,7 +8,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 
 setup(
-    name="CoincoinMktCap",
+    name="CoinMktCap",
     packages=["CoinMktCap"],
     version="0.1.0",
     description="Python wrapper for CoinMarketCap API",
